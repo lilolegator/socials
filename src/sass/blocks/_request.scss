@@ -1,0 +1,33 @@
+.request {
+    margin-top: 120px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $blue;
+        border-radius: 32px;
+        color: #fff;
+        padding: 40px 60px;
+
+        h3 {
+            font-size: 22px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    &__btn {
+        button {
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 16px;
+            width: 300px;
+            height: 55px;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+@import "libs/font";
+@import "base/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gotham";
+}
+
+body {
+    background-color: #ECF3FB;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn {
+    background-color: $blue;
+    color: #fff;
+    border: 0;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 24px;
+        line-height: 50px;
+    }
+
+    &__descr {
+        font-size: 16px;
+    }
+
+    &__btn {
+        margin-top: 40px;
+    }
+}
+
+.title {
+    margin-top: 120px;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ul__list {
+    position: relative;
+}
+
+.dropdownMenu {
+    left: -23px;
+    position: absolute;
+    top: -120px;
+    width: max-content;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 16px;
+    transition: all .5s;
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px !important;
+    }
+    a {
+        transition: all .3s;
+        &:hover {
+            color: $blue;
+        }
+    }
+  }
+  
+  .show {
+    visibility: visible;
+    opacity: 1;
+    top: 45px;
+  }
+  .hide {
+    top: -120px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/service";
+@import "blocks/plans";
+@import "blocks/about";
+@import "blocks/faq";
+@import "blocks/request";
+@import "blocks/footer";
