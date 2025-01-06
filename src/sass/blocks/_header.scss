@@ -9,6 +9,10 @@
     a, div, nav > ul {
         display: flex;
         align-items: center;
+
+        .header__socials {
+            margin-right: 35px;
+        }
     }
 
     ul {
@@ -21,12 +25,7 @@
     &__name {
         margin-left: 8px;
     }
-
-    &__socials {
-        margin-right: 35px;
-        gap: 12px;
-    }
-
+    
     &__lang {
         margin-right: 20px;
     }
@@ -35,4 +34,10 @@
         width: 140px;
         height: 40px;
     }
+}
+
+.header__socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }

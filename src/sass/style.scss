@@ -112,6 +112,10 @@ a {
     cursor: pointer;
   }
 
+  .icon {
+    fill: #333333;
+  }
+
 @import "blocks/header";
 @import "blocks/promo";
 @import "blocks/service";
