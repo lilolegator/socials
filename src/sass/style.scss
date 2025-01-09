@@ -21,9 +21,19 @@ ul {
     list-style-type: none;
 }
 
+img {
+    object-fit: cover;
+}
+
 a {
     text-decoration: none;
     color: #000;
+}
+
+.main__photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
 }
 
 .btn {
@@ -116,6 +126,8 @@ a {
     fill: #333333;
   }
 
+  
+
 @import "blocks/header";
 @import "blocks/promo";
 @import "blocks/service";
@@ -124,3 +136,7 @@ a {
 @import "blocks/faq";
 @import "blocks/request";
 @import "blocks/footer";
+@import "blocks/hamburger";
+
+
+@import "libs/media";

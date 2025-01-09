@@ -1,0 +1,176 @@
+@media (max-width: 1439px) {
+    .container {
+        max-width: 1100px;
+    }
+    .header {
+        padding: 3px 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .wrapper{
+        &__title {
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
+    .plans {
+        &__link {
+            min-width: 340px;
+        }
+        &__discounts {
+            padding: 40px;
+        }
+    }
+    .header {
+        padding: 3px 10px;
+
+        ul {
+            gap: 20px;
+        }
+    }
+    .about {
+        &__container {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    .request__text {
+        width: 500px;
+    }
+    .service {
+        &__about {
+            padding: 48px 32px;
+        }
+        &__img {
+            width: 400px;
+        }
+    }
+    .footer {
+        &__link {
+            gap: 130px;
+        }
+        .header__name {
+            display: none;
+        }
+        .logo {
+            width: 44px;
+        }
+        &__main {
+            padding: 40px 10px 60px 10px;
+        }
+        &__copy {
+            padding: 0 10px;
+        }
+    }
+    a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .header {
+        padding: 3px 35px;
+        &__menu {
+            display: none !important;
+        }
+    }
+
+    
+    .wrapper {
+        &__title {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+    .service {
+        &__about {
+            padding: 10px 14px;
+        }
+        &__item, &__img {
+            border-radius: 16px;
+        }
+    }
+    .plans {
+        &__img {
+            width: 80px;
+            top: 20px;
+            right: 22px;
+        }
+        &__title {
+            margin-top: 0;
+        }
+        &__item {
+            padding: 47px 20px 20px 20px;
+        }
+        &__link {
+            height: 100px;
+        }
+        &__discounts {
+            gap: 32px;
+        }
+    }
+    .title {
+        margin-top: 100px;
+    }
+    .about {
+        &__container {
+            padding: 20px;
+            img {
+                width: 60px;
+                height: auto;
+            }
+            p {
+                padding: 20px 0;
+                font-size: 16px;
+            }
+        }
+    }
+    .request {
+        &__wrapper {
+            padding: 32px;
+            h3 {
+                font-size: 20px;
+            }
+        }
+        &__btn button {
+            width: 240px;
+            margin-left: 40px;
+        }
+    }
+    .footer {
+        &__link {
+            gap: 55px;
+        }
+
+        &__copy {
+            font-size: 15px;
+            padding-bottom: 20px;
+        }
+    }
+    .hamburger {
+        display: block !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px 0 10px;
+    }
+}
