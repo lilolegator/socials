@@ -58,10 +58,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile')
 
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('hamburger-close');
         hamburger.classList.toggle('hamburger-active');
+
+        if (!mobileMenu.classList.contains('mobile-active')) {
+            mobileMenu.style.top = '60px'; 
+            mobileMenu.classList.add('mobile-active');
+            document.body.style.overflow = 'hidden';
+        } else {
+            mobileMenu.style.top = '-100%';
+            mobileMenu.classList.remove('mobile-active');
+            document.body.style.overflow = '';
+        }
     });
 });
   

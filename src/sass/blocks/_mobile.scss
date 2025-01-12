@@ -1,0 +1,80 @@
+.mobile {
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+    z-index: 100;
+    background-color: #ECF3FB;
+
+    position: fixed;
+    top: -100%;
+    transition: top .5s ease;
+
+    &__menu {
+        position: relative;
+        height: 90%;
+    }
+
+    &__icon {
+        width: 24px;
+        margin-right: 10px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        font-size: 18px;
+        height: 7vh;
+        &:active {
+            color: $blue;
+            .mobile__icon{
+
+                fill: $blue;
+            }
+        }
+    }
+    
+    &__icon {
+        fill: #9C99AD;
+    }
+
+    &__links {
+        background-color: #fff;
+        padding: 16px;
+        border-radius: 12px;
+        &:nth-child(1) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__bottom {
+        position: absolute;
+        width: calc(100% - 20px);
+        bottom: 0;
+    }
+
+    &__btns {
+        display: flex;
+        flex-direction: column;
+
+        .btn {
+            height: 43px;
+            border-radius: 12px;
+            &:nth-child(1) {
+                margin-bottom: 8px;
+            }
+        }
+
+        .login {
+            background-color: transparent;
+            border: 1px solid $blue;
+            color: $blue;
+        }
+    }
+
+    &__socials {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
