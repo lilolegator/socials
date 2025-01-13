@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.addEventListener("click", () => {
             faqArrow[i].classList.toggle('rotate');
 
-            faqHide[i].classList.toggle('active'); // Додаємо або прибираємо клас
+            faqHide[i].classList.toggle('active'); 
 
             if (faqHide[i].classList.contains('active')) {
                 faqHide[i].style.maxHeight = `${faqHide[i].scrollHeight + 20}px`;

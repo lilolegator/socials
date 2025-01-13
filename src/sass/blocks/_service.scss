@@ -33,4 +33,13 @@
         width: 150px;
         height: 55px;
     }
+
+    &__zero {
+        text-align: center;
+        font-size: 20px;
+        color: #970101;
+        background-color: white;
+        padding: 30px 0;
+        border-radius: 12px;
+    }
 }
